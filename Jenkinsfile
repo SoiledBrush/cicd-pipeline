@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        nodejs nodejs
+    }
 
     environment {
         IMAGE_NAME = "my-node-app"
@@ -17,7 +20,6 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'npm install'
-                // Optional: overwrite logo.svg dynamically here if needed
             }
         }
 
