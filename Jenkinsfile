@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    tools {
+        nodejs "nodejs"
+    }    
 //    triggers {
         // Leave empty if you use webhooks (preferred)
         // pollSCM('H/5 * * * *') // Uncomment if no webhooks
