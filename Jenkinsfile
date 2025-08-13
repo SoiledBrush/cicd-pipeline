@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-    triggers {
+//    triggers {
         // Leave empty if you use webhooks (preferred)
         // pollSCM('H/5 * * * *') // Uncomment if no webhooks
-    }
+//    }
 
     stages {
         stage('Checkout') {
