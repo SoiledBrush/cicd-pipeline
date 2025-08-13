@@ -45,5 +45,10 @@ pipeline {
                 """
             }
         }
+        stage('Archive build') {
+            steps {
+                archiveArtifacts artifacts: 'build/**', fingerprint: true
+            }
+        }
     }
 }
